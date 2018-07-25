@@ -1,0 +1,13 @@
+name: Solarize
+version: 0.1.0
+description: Grav port of Solarize theme by Templated
+icon: rebel
+author:
+  name: Hugh Barnes
+  email: dev@hubns.com
+homepage: https://github.com/hughbris/grav-theme-solarize
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/hughbris/grav-theme-solarize/issues
+readme: https://github.com/hughbris/grav-theme-solarize/blob/develop/README.md
+license: MIT
