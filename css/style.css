@@ -478,15 +478,18 @@
 			background-size: cover;
 		}
 
-		.wrapper.style2 {
+		.wrapper.style2,
+		.wrapper.evenpart {
 			background: #f2f2f2;
 		}
 
-			.wrapper.style2 .major {
+			.wrapper.style2 .major,
+			.wrapper.evenpart .major {
 				text-align: left !important;
 			}
 
-				.wrapper.style2 .major h2 {
+				.wrapper.style2 .major h2,
+				.wrapper.evenpart .major h2 {
 					display: block;
 					margin-bottom: 0.70em;
 					letter-spacing: 1px;
@@ -496,14 +499,16 @@
 					font-weight: 400;
 				}
 
-				.wrapper.style2 .major .byline {
+				.wrapper.style2 .major .byline,
+				.wrapper.evenpart .major .byline {
 					letter-spacing: normal;
 					line-height: 1.6em;
 					text-transform: capitalize;
 					font-size: 1.4em;
 				}
 
-			.wrapper.style2 h3 {
+			.wrapper.style2 h3,
+			.wrapper.evenpart h3 {
 				display: block;
 				margin-bottom: 1em;
 				letter-spacing: 1px;

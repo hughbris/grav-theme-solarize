@@ -18,7 +18,8 @@
 		padding: 4em 0em 2em 0em;
 	}
 
-		.wrapper.style2 {
+		.wrapper.style2,
+		.wrapper.evenpart {
 			padding-bottom: 5em;
 		}
 
