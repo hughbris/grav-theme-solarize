@@ -8,50 +8,50 @@
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
 {% block head %}
-    <title>{% if header.title %}{{ header.title|e('html') }} - {% endif %}{{ site.title|default('Solarize by TEMPLATED')|e('html') }}</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>{% if header.title %}{{ header.title|e('html') }} - {% endif %}{{ site.title|default('Solarize by TEMPLATED')|e('html') }}</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    {% include 'partials/metadata.html.twig' %}
+	{% include 'partials/metadata.html.twig' %}
 
-    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
-    <link rel="canonical" href="{{ page.url(true, true) }}" />
+	<link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+	<link rel="canonical" href="{{ page.url(true, true) }}" />
 
-    {% block javascripts %}
-        {% do assets.addJs('theme://js/jquery.min.js') %}
-        {% do assets.addJs('theme://js/jquery.dropotron.min.js') %}
-        {% do assets.addJs('theme://js/skel.min.js') %}
-        {% do assets.addJs('theme://js/skel-layers.min.js') %}
-        {% do assets.addJs('theme://js/init.js', {'group': 'init'} ) %}
-    {% endblock %}
+	{% block javascripts %}
+		{% do assets.addJs('theme://js/jquery.min.js') %}
+		{% do assets.addJs('theme://js/jquery.dropotron.min.js') %}
+		{% do assets.addJs('theme://js/skel.min.js') %}
+		{% do assets.addJs('theme://js/skel-layers.min.js') %}
+		{% do assets.addJs('theme://js/init.js', {'group': 'init'} ) %}
+	{% endblock %}
 
-    {% block stylesheets %}
-        {% if browser.getBrowser == 'msie' and browser.getVersion <= 8 %}
-            {# do assets.addJs('theme://css/ie/html5shiv.js', {'group', 'shiv'}) #}
-            {% do assets.addJs('theme://css/ie/html5shiv.js') %}
-        {% endif %}
+	{% block stylesheets %}
+		{% if browser.getBrowser == 'msie' and browser.getVersion <= 8 %}
+			{# do assets.addJs('theme://css/ie/html5shiv.js', {'group', 'shiv'}) #}
+			{% do assets.addJs('theme://css/ie/html5shiv.js') %}
+		{% endif %}
 
-        {% do assets.addCss('theme://css/skel.css', {'group': 'noscript'}) %}
-        {% do assets.addCss('theme://css/style.css', {'group': 'noscript'}) %}
-        {% if browser.getBrowser == 'msie' and browser.getVersion <= 8 %}
-            {# do assets.addCss('theme://css/ie/v8.css', {'group', 'ie'}) #}
-            {% do assets.addCss('theme://css/ie/v8.css') %}
-        {% endif %}
-        {% do assets.addCss('theme://css/custom.css') %}
-    {% endblock %}
+		{% do assets.addCss('theme://css/skel.css', {'group': 'noscript'}) %}
+		{% do assets.addCss('theme://css/style.css', {'group': 'noscript'}) %}
+		{% if browser.getBrowser == 'msie' and browser.getVersion <= 8 %}
+			{# do assets.addCss('theme://css/ie/v8.css', {'group', 'ie'}) #}
+			{% do assets.addCss('theme://css/ie/v8.css') %}
+		{% endif %}
+		{% do assets.addCss('theme://css/custom.css') %}
+	{% endblock %}
 
-    {{ assets.js() }}
-    {{ assets.js('init', { 'data-theme-root': theme_url } ) }}
-    {{ assets.css() }}
-    <noscript>
-        {{ assets.css('noscript') }}
-    </noscript>
+	{{ assets.js() }}
+	{{ assets.js('init', { 'data-theme-root': theme_url } ) }}
+	{{ assets.css() }}
+	<noscript>
+		{{ assets.css('noscript') }}
+	</noscript>
 
 {% endblock head %}
 </head>
 
 <body class="{{ body_classes }}">
 
-    {% block header %}
+	{% block header %}
 
 		<!-- Header Wrapper -->
 			<div class="wrapper style1">
@@ -61,35 +61,11 @@
 					<div class="container">
 
 						<!-- Logo -->
-							<h1><a href="#" id="logo">Solarize</a></h1>
+							<h1><a href="{{ home_url }}" id="logo">{{ site.title }}</a></h1>
 
 						<!-- Nav -->
 							<nav id="nav">
-								<ul>
-									<li class="active"><a href="index.html">Home</a></li>
-									<li>
-										<a href="">Dropdown</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
-											<li>
-												<a href="">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-													<li><a href="#">Veroeros feugiat</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-								</ul>
+								{% include 'partials/navigation.html.twig' %}
 							</nav>
 
 					</div>
@@ -106,9 +82,9 @@
 
 			</div>
 
-    {% endblock %}
+	{% endblock header %}
 
-    {% block body %}
+	{% block body %}
 
 		<!-- Section One -->
 			<div class="wrapper style2">
@@ -242,21 +218,21 @@
 			</div>
 
 {#
-        <section id="start">
-        {% block body %}
-            <section id="body-wrapper" class="section">
-                <section class="container {{ grid_size }}">
-                    {% block messages %}
-                        {% include 'partials/messages.html.twig' ignore missing %}
-                    {% endblock %}
-                    {% block content %}{% endblock %}
-                </section>
-            </section>
-        {% endblock %}
-        </section>
+		<section id="start">
+		{% block body %}
+			<section id="body-wrapper" class="section">
+				<section class="container {{ grid_size }}">
+					{% block messages %}
+						{% include 'partials/messages.html.twig' ignore missing %}
+					{% endblock %}
+					{% block content %}{% endblock %}
+				</section>
+			</section>
+		{% endblock %}
+		</section>
 #}
 
-    {% endblock body %}
+	{% endblock body %}
 
 {% block footer %}
 	<!-- Footer -->
@@ -283,7 +259,7 @@
 {% endblock %}
 
 {% block bottom %}
-    {{ assets.js('bottom') }}
+	{{ assets.js('bottom') }}
 {% endblock %}
 
 </body>
