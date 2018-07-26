@@ -1,0 +1,14 @@
+{% if page.header.banner %}
+<!-- Banner -->
+	<div id="banner">
+		<section class="container">
+			<h2>{{ page.header.banner.headline }}</h2>
+			{% if page.header.banner.follower %}
+				<span>{{ page.header.banner.follower }}</span>
+			{% endif %}
+			{% if page.header.banner.blurb %}
+				<p>{{ page.header.banner.blurb }}</p>
+			{% endif %}
+		</section>
+	</div>
+{% endif %}
