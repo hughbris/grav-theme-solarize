@@ -1,5 +1,23 @@
 {% extends 'partials/base.html.twig' %}
 
-{% block content %}
-    {{ page.content }}
-{% endblock %}
+{% block body %}
+<!-- Main -->
+    <div id="main" class="wrapper style4 full_width">
+
+        <!-- Content -->
+        <div id="content" class="container">
+            <section>
+                <header class="major">
+                    <h2>{{ page.title }}</h2>
+                    {% if page.subtitle %}
+                        <span class="byline">{{ page.subtitle }}</span>
+                    {% endif %}
+                </header>
+                {{ page.content }}
+            </section>
+        </div>
+    </div>
+{{ dump(page.find('/').header.portals) }}
+    {% include 'partials/sections/portals.html.twig' with { 'data_source': page.find('/') } %}
+
+{% endblock body %}
