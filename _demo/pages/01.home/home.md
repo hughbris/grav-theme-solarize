@@ -12,6 +12,12 @@ hook:
     button:
         text: 'Nulla aluctus eleifend'
         target: '#'
+cta:
+    headline: 'Cras vitae metus aliNuam'
+    copy: 'Pellentesque pede. Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.'
+    button:
+        text: 'Nulla aluctus eleifend'
+        target: '#'
 ---
 
 ### Suspendisse dictum porta
