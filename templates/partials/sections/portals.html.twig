@@ -1,0 +1,21 @@
+{% if page.header.portals %}
+<!-- Team aka 'portals' (CSS and frontmatter) -->
+	{% set portals = page.header.portals %}
+	<div class="wrapper style5">
+		<section id="team" class="container">
+			<header class="major">
+				<h2>{{ portals.heading }}</h2>
+				<span class="byline">{{ portals.byline }}</span>
+			</header>
+			<div class="row">
+				{% for portal in portals.items %}
+				<div class="3u">
+					<a href="{{ portal.target }}" alt="{{ portal.alt|default('') }}" class="image"><img src="{{ page.media[portal.thumbnail].resize(162,162).url }}" alt=""></a>
+					<h3>{{ portal.heading }}</h3>
+					<p>{{ portal.teaser }}</p>
+				</div>
+				{% endfor %}
+			</div>
+		</section>
+	</div>
+{% endif %}
