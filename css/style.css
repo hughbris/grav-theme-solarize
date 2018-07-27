@@ -518,19 +518,22 @@
 				font-weight: 400;
 			}
 
-		.wrapper.style3 {
+		.wrapper.style3,
+		.wrapper.cta {
 			padding-bottom: 6em;
 			background: #82b440;
 			text-align: center;
 			color: white;
 		}
 
-			.wrapper.style3 .container {
+			.wrapper.style3 .container,
+			.wrapper.cta .container {
 				padding-left: 6em;
 				padding-right: 6em;
 			}
 
-			.wrapper.style3 p {
+			.wrapper.style3 p,
+			.wrapper.cta p {
 				font-size: 1.6em;
 			}
 

@@ -62,12 +62,14 @@
 			font-size: 1.2em;
 		}
 
-	.wrapper.style3 .container {
+	.wrapper.style3 .container,
+	.wrapper.cta .container {
 		padding-left: 1em;
 		padding-right: 1em;
 	}
 
-	.wrapper.style3 p {
+	.wrapper.style3 p,
+	.wrapper.cta p {
 		font-size: 1em;
 	}
 
