@@ -8,7 +8,7 @@
 				<span class="byline">{{ portals.byline }}</span>
 			</header>
 			<div class="row">
-				{% for portal in portals.items %}
+				{% for portal in portals.items|slice(0, 4) %}
 				<div class="3u">
 					<a href="{{ portal.target }}" alt="{{ portal.alt|default('') }}" class="image"><img src="{{ page.media[portal.thumbnail].resize(162,162).url }}" alt=""></a>
 					<h3>{{ portal.heading }}</h3>
