@@ -78,11 +78,13 @@
 		padding-bottom: 2em;
 	}
 
-	.wrapper.style5 {
+	.wrapper.style5,
+	.wrapper.portals {
 		padding-bottom: 4em;
 	}
 
-		.wrapper.style5 img {
+		.wrapper.style5 img,
+		.wrapper.portals img {
 			width: 30%;
 		}
 

@@ -542,19 +542,22 @@
 			background: white;
 		}
 
-		.wrapper.style5 {
+		.wrapper.style5,
+		.wrapper.portals {
 			background: #82b440;
 			text-align: center;
 			color: white;
 		}
 
-			.wrapper.style5 .image {
+			.wrapper.style5 .image,
+			.wrapper.portals .image {
 				display: block;
 				width: 60%;
 				margin: 0em auto 2em auto;
 			}
 
-				.wrapper.style5 .image img {
+				.wrapper.style5 .image img,
+				.wrapper.portals .image img {
 					border-radius: 50%;
 					border: 10px solid;
 					border-color: white;

@@ -28,7 +28,8 @@
 			margin-bottom: 1em;
 		}
 
-		.wrapper.style5 img {
+		.wrapper.style5 img,
+		.wrapper.portals img {
 			width: 70%;
 		}
 

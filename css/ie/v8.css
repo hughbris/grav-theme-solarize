@@ -12,7 +12,8 @@
 
 /* Wrapper */
 
-	.wrapper.style5 .image img {
+	.wrapper.style5 .image img,
+	.wrapper.portals .image img {
 		position: relative;
 		-ms-behavior: url("css/ie/PIE.htc");
 	}
