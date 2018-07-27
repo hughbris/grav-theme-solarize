@@ -18,6 +18,46 @@ cta:
     button:
         text: 'Nulla aluctus eleifend'
         target: '#'
+notices: # NB. these will be rendered vertically in columns in order provided here
+    heading: Cras vitae metus aliNuam
+    byline: 'pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.'
+    items:
+        - icon: cogs
+          # target: '#'
+          heading: 'Nulla luctus eleifend'
+          point: 'In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.'
+        - icon: wrench
+          # target: '#'
+          heading: 'Etiam posuere augue'
+          point: 'Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.'
+        - icon: leaf
+          # target: '#'
+          heading: 'Fusce ultrices fringilla'
+          point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.'
+        - icon: cogs
+          # target: '#'
+          heading: 'Nulla luctus eleifend'
+          point: 'In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.'
+        - icon: wrench
+          # target: '#'
+          heading: 'Etiam posuere augue'
+          point: 'Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.'
+        - icon: leaf
+          # target: '#'
+          heading: 'Fusce ultrices fringilla'
+          point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.'
+        - icon: cogs
+          # target: '#'
+          heading: 'Nulla luctus eleifend'
+          point: 'In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.'
+        - icon: wrench
+          # target: '#'
+          heading: 'Etiam posuere augue'
+          point: 'Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.'
+        - icon: leaf
+          # target: '#'
+          heading: 'Fusce ultrices fringilla'
+          point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.'
 ---
 
 ### Suspendisse dictum porta
