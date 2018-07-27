@@ -23,7 +23,8 @@
 			padding-bottom: 5em;
 		}
 
-		.wrapper.style4 p {
+		.wrapper.style4 p,
+		.wrapper.full_width p {
 			margin-bottom: 1em;
 		}
 

@@ -537,7 +537,8 @@
 				font-size: 1.6em;
 			}
 
-		.wrapper.style4 {
+		.wrapper.style4,
+		.wrapper.full_width {
 			background: white;
 		}
 

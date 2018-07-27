@@ -73,7 +73,8 @@
 		font-size: 1em;
 	}
 
-	.wrapper.style4 {
+	.wrapper.style4,
+	.wrapper.full_width {
 		padding-bottom: 2em;
 	}
 
