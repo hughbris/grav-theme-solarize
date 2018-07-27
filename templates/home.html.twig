@@ -6,29 +6,7 @@
 
 {% block body %}
 
-	{% if page.header.hook %}
-	<!-- Section One -->
-		<div class="wrapper style2 evenpart">
-			<section class="container">
-				<div class="row double">
-					<div class="6u">
-						<header class="major">
-							<h2>{{ header.hook.teaser }}</h2>
-							<span class="byline">{{ header.hook.byline }}</span>
-						</header>
-					</div>
-					<div class="6u">
-						{{ page.content }}
-						{% if page.header.hook.button %}
-							<a href="{{ header.hook.button.target }}" class="button">{{ header.hook.button.text }}</a>
-						{% endif %}
-					</div>
-				</div>
-			</section>
-		</div>
-	{% elseif page.content|trim|length > 0 %}
-		{{ dump('Notice: homepage markdown content not rendered because page header "hook" is missing in frontmatter.') }}
-	{% endif %}
+	{% include 'partials/sections/hook.html.twig' %}
 
 	<!-- Section Two -->
 		<div class="wrapper style3">
