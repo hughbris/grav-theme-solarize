@@ -15,12 +15,7 @@
 					<!-- Content -->
 					<div id="content" class="8u skel-cell-important">
 						<section>
-							<header class="major">
-								<h2>{{ page.title }}</h2>
-								{% if page.header.subtitle %}
-									<span class="byline">{{ page.header.subtitle }}</span>
-								{% endif %}
-							</header>
+							{% include 'partials/heading.html.twig' %}
 							{{ page.content }}
 						</section>
 					</div>
