@@ -7,5 +7,12 @@
 # v0.1.1
 ##  29-07-2018
 
-1. [](#improved)
+1. [](#new)
     * Added elements page
+
+# v0.1.2
+##  20-04-2019
+
+1. [](#improved)
+    * Template cleanup
+    * Removed some deprecated Twig
