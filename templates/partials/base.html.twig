@@ -39,12 +39,14 @@
 		{% do assets.addCss('theme://css/custom.css') %}
 	{% endblock %}
 
-	{{ assets.js() }}
-	{{ assets.js('init', { 'data-theme-root': theme_url } ) }}
-	{{ assets.css() }}
-	<noscript>
-		{{ assets.css('noscript') }}
-	</noscript>
+	{% block assets deferred %}
+		{{ assets.js() }}
+		{{ assets.js('init', { 'data-theme-root': theme_url } ) }}
+		{{ assets.css() }}
+		<noscript>
+			{{ assets.css('noscript') }}
+		</noscript>
+	{% endblock assets %}
 
 {% endblock head %}
 </head>
