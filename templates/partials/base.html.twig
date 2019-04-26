@@ -21,7 +21,7 @@
 		{% do assets.addJs('theme://js/jquery.dropotron.min.js') %}
 		{% do assets.addJs('theme://js/skel.min.js') %}
 		{% do assets.addJs('theme://js/skel-layers.min.js') %}
-		{% do assets.addJs('theme://js/init.js', {'group': 'init'} ) %}
+		{% do assets.addJs('theme://js/init.js', {'group': 'init', 'data-theme-root': theme_url} ) %}
 	{% endblock %}
 
 	{% block stylesheets %}
@@ -41,7 +41,7 @@
 
 	{% block assets deferred %}
 		{{ assets.js() }}
-		{{ assets.js('init', { 'data-theme-root': theme_url } ) }}
+		{{ assets.js('init') }}
 		{{ assets.css() }}
 		<noscript>
 			{{ assets.css('noscript') }}
