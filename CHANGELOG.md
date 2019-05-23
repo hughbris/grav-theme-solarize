@@ -16,3 +16,13 @@
 1. [](#improved)
     * Template cleanup
     * Removed some deprecated Twig
+
+# v0.1.3
+##  23-05-2019
+
+1. [](#improved)
+    * Base template modified so it can be extended to support a deferred asset block (#)
+
+1. [](#new)
+    * Instructions for deploying deferred asset blocks added to README
+    * Examples in the wild section added to README
