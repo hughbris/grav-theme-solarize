@@ -141,7 +141,7 @@ If you want to set Solarize as the default theme, you can do so by following the
 
 Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **solarize** folder.
 
-## Examples in the wild
+# Examples in the wild
 
 * [Kai Baumgartner](http://www.kaibaumgartner.com/)
 * [Official demo](https://behold.metamotive.co.nz/solarize)
