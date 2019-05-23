@@ -60,6 +60,32 @@ Manually updating Solarize is pretty simple. Here is what you will need to do to
 * [Right sidebar two-column template](templates/right-sidebar.html.twig)
 * [Single column template](templates/default.html.twig)
 
+## Deferred assets block support
+
+As [explained in the Grav blog](https://getgrav.org/blog/important-theme-updates), since Grav 1.5.10 deferred blocks are supported and it will be standard to invoke assets rendering using these in the near future. _For the page templates included_, **this theme does not require deferred asset blocks**, and invoking a deferred asset block will crash a site running an older version of Grav.
+
+Since v0.1.3 of this theme, it is simple to override the base template so that you can use a deferred asset block. In a template that extends `partials/base.html.twig`, simply add a deferred block called `assets`. For example:
+
+```twig
+{% extends 'partials/base.html.twig' %}
+
+{# for example, add a custom javascript file #}
+{% block javascripts %}
+  {% do assets.addJs('theme://js/site.js') }}
+  {{ parent() }}
+{% endblock %}
+
+{# then override the default non-deferred assets block with a deferred block, and optionally alter it #}
+{% block assets deferred %}
+  {{ parent() }}
+{% endblock %}
+```
+
+If several of your templates require a deferred asset block, either:
+
+* create a common shared partial template, say `partials/extended-base.html.twig` with similar contents to the example above, and change your template files so that they extend this rather than `partials/base.html.twig`; _or_
+* modify a copy of `partials/base.html.twig`.
+
 <!--
 ### Menu Features
 
