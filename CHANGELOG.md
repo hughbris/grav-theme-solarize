@@ -21,7 +21,7 @@
 ##  23-05-2019
 
 1. [](#improved)
-    * Base template modified so it can be extended to support a deferred asset block [#5](https://github.com/hughbris/grav-theme-solarize/issues/5)
+    * Base template modified so it can be extended to support a deferred asset block ([#5](https://github.com/hughbris/grav-theme-solarize/issues/5))
 
 1. [](#new)
     * Instructions for deploying deferred asset blocks added to README
