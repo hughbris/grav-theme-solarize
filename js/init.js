@@ -6,7 +6,7 @@
 
 (function($) {
 
-	var themeCSSPath = $(document.currentScript).data('theme-root') + '/css/';
+	var themeCSSPath = $('script').last().data('theme-root') + '/css/';
 
 	skel.init({
 		reset: 'full',
