@@ -26,3 +26,9 @@
 1. [](#new)
     * Instructions for deploying deferred asset blocks added to README
     * Examples in the wild section added to README
+
+# v0.1.4
+##  31-05-2019
+
+1. [](#bugfix)
+    * Fixed JS-derived CSS paths for skel framework in IE browsers ([#6](https://github.com/hughbris/grav-theme-solarize/issues/6))
