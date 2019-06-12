@@ -32,3 +32,9 @@
 
 1. [](#bugfix)
     * Fixed JS-derived CSS paths for skel framework in IE browsers ([#6](https://github.com/hughbris/grav-theme-solarize/issues/6))
+
+# v0.1.5
+##  12-06-2019
+
+1. [](#bugfix)
+    * Fixed mixed content warning when importing google fonts plain http CSS URL ([#6](https://github.com/hughbris/grav-theme-solarize/issues/8))
