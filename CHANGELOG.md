@@ -38,3 +38,9 @@
 
 1. [](#bugfix)
     * Fixed mixed content warning when importing google fonts plain http CSS URL ([#8](https://github.com/hughbris/grav-theme-solarize/issues/8))
+
+# v0.1.6
+##  25-09-2019
+
+1. [](#bugfix)
+    * Merged PR by @tiktuk which fixes dropdown menus after Twig engine changes ([#10](https://github.com/hughbris/grav-theme-solarize/pull/10))

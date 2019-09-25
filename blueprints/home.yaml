@@ -1,0 +1,29 @@
+title: Homepage
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        custom:
+          type: tab
+          title: Home content
+
+          fields:
+            video:
+                type: section
+                title: Banner
+                underline: true
+
+                fields:
+                  header.banner.headline:
+                    type: text
+                    label: 'Headline'
+                    # default:
+                    validate:
+                      required: true

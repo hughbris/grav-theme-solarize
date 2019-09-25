@@ -21,10 +21,10 @@
         {% endif %}
     {% endfor %}
 {% endmacro %}
-{% import _self as navigation %}
+
 <ul>
     {% if config.theme.dropdown.enabled %}
-        {{ navigation.loop(pages) }} {# TODO: not tested #}
+        {{ _self.loop(pages) }}
     {% else %}
         {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
