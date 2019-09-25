@@ -37,4 +37,4 @@
 ##  12-06-2019
 
 1. [](#bugfix)
-    * Fixed mixed content warning when importing google fonts plain http CSS URL ([#6](https://github.com/hughbris/grav-theme-solarize/issues/8))
+    * Fixed mixed content warning when importing google fonts plain http CSS URL ([#8](https://github.com/hughbris/grav-theme-solarize/issues/8))
