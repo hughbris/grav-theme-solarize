@@ -143,7 +143,8 @@ Once this is done, you should be able to see the new theme on the frontend. Keep
 
 # Examples in the wild
 
-* [Kai Baumgartner](http://www.kaibaumgartner.com/)
 * [Official demo](https://behold.metamotive.co.nz/solarize)
+
+There's only one contrived one now :(
 
 Please let me know if you want yours included (hey, it's free publicity).
