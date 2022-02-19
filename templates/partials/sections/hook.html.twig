@@ -10,7 +10,7 @@
 					</header>
 				</div>
 				<div class="6u">
-					{{ text_copy|default(page.content) }}
+					{{ (text_copy|default(page.content))|raw }}
 					{% if page.header.hook.button %}
 						<a href="{{ header.hook.button.target }}" class="button">{{ header.hook.button.text }}</a>
 					{% endif %}

@@ -8,7 +8,7 @@
 		<div id="content" class="container">
 			<section>
 				{% include 'partials/heading.html.twig' %}
-				{{ page.content }}
+				{{ page.content|raw }}
 			</section>
 		</div>
 	</div>

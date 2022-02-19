@@ -13,7 +13,7 @@
 				<div class="3u">
 					<a href="{{ portal.target }}" alt="{{ portal.alt|default('') }}" class="image"><img src="{{ data_source.media[portal.thumbnail].resize(162,162).url }}"></a>
 					<h3>{{ portal.heading }}</h3>
-					<p>{{ portal.teaser }}</p>
+					<p>{{ portal.teaser|raw }}</p>
 				</div>
 				{% endfor %}
 			</div>

@@ -40,11 +40,11 @@
 	{% endblock %}
 
 	{% block assets %}
-		{{ assets.js() }}
-		{{ assets.js('init', {'data-theme-root': theme_url} ) }} {# required for pre deferred assets Twig versions, see https://getgrav.org/blog/important-theme-updates #}
-		{{ assets.css() }}
+		{{ assets.js()|raw }}
+		{{ assets.js('init', {'data-theme-root': theme_url} )|raw }} {# required for pre deferred assets Twig versions, see https://getgrav.org/blog/important-theme-updates #}
+		{{ assets.css()|raw }}
 		<noscript>
-			{{ assets.css('noscript') }}
+			{{ assets.css('noscript')|raw }}
 		</noscript>
 	{% endblock assets %}
 
@@ -81,7 +81,7 @@
 
 	{% block body %}
 		{% block content %}
-			{{ page.content }}
+			{{ page.content|raw }}
 		{% endblock content %}
 	{% endblock body %}
 
@@ -90,7 +90,7 @@
 	{% endblock footer %}
 
 	{% block bottom %}
-		{{ assets.js('bottom') }}
+		{{ assets.js('bottom')|raw }}
 	{% endblock bottom %}
 
 </body>

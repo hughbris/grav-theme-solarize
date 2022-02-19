@@ -44,3 +44,9 @@
 
 1. [](#bugfix)
     * Merged PR by @tiktuk which fixes dropdown menus after Twig engine changes ([#10](https://github.com/hughbris/grav-theme-solarize/pull/10))
+
+# v0.2.0
+##  19-02-2022
+
+1. [](#bugfix)
+    * Escape output as required for Grav 1.7+ ([#12](https://github.com/hughbris/grav-theme-solarize/pull/12))
