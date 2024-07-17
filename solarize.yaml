@@ -1,6 +1,3 @@
 enabled: true
 dropdown:
   enabled: true
-conformance:
-  jquery: true # note that setting this to false produces a JS console error: "Uncaught TypeError: e.indexOf is not a function" thrown in /system/assets/jquery/jquery-3.x.min.js; seems to break dropdown menus, possibly more
-  # refer https://github.com/hughbris/grav-theme-solarize/issues/15

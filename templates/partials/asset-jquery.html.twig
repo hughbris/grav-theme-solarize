@@ -1,5 +1,0 @@
-{% if theme.conformance.jquery|defined(false) %}
-    {% script 'theme://js/jquery.min.js' %}
-{% elseif not (system.debugger.enabled and system.debugger.provider|defined('__other') ==  'debugbar') %} {# refer https://github.com/getgrav/grav/issues/157 but still this test should not be required #}
-    {% script 'jquery' %}
-{% endif %}
